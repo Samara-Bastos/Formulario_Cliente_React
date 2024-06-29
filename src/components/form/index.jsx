@@ -2,6 +2,7 @@ import { Container, FormControl,FormLabel, Input, Select,
     Radio, RadioGroup, InputGroup, InputLeftAddon, Switch, Textarea, Button } from '@chakra-ui/react';
 import './style.css';
 import { useState } from 'react';
+import { Link } from "react-router-dom";
 
 function Formulario(){
     const [FormData, setFormData] = useState({
@@ -72,6 +73,11 @@ function Formulario(){
             </FormControl>
 
             <FormControl className='FormControl Div-Button'>
+                <Link to={`/view`}>
+                    <Button className='Button' variant='outline'>
+                        Ver clientes
+                    </Button>
+                </Link>
                 <Button className='Button' variant='outline' type='submit'>
                     Enviar
                 </Button>

@@ -18,5 +18,6 @@
 }
 
 .Div-Button{
-  text-align: end;
+  display: flex;
+  justify-content: space-between;
 }
