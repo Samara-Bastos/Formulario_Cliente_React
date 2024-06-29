@@ -1,6 +1,6 @@
 .FormControl{
     padding-top: 7px;
-    padding-bottom: 7px;
+    padding-bottom: 24px;
 }
 
 .Label{
@@ -8,15 +8,15 @@
 }
 
 .Button{
-    background-color: transparent !important;
-    border: 1px solid #ffbf69 !important;
-  }
-  
-  .Button:hover{
-    background-color: #ffbf69 !important;
-    color: #FFFFFF;
-  }
+  background-color: transparent !important;
+  border: 1px solid #ffbf69 !important;
+}
 
-  .Div-Button{
-    text-align: end;
-  }
+.Button:hover{
+  background-color: #ffbf69 !important;
+  color: #FFFFFF;
+}
+
+.Div-Button{
+  text-align: end;
+}
