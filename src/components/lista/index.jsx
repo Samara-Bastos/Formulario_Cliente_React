@@ -2,7 +2,12 @@ import { Link } from "react-router-dom";
 import { Button } from "@chakra-ui/react";
 import { useState, useEffect } from 'react';
 import setupAxios from "../../axios/config";
-import { Card} from '@chakra-ui/react'
+import { Card} from '@chakra-ui/react';
+import './style.css';
+
+import User from '../../icons/user.svg';
+import List  from '../../icons/list.svg';
+import Date from '../../icons/date.svg';
 
 function Lista(){
     const [clientes, setClientes] = useState([]);
@@ -41,21 +46,23 @@ function Lista(){
                     Novo cliente
                 </Button>
             </Link>
-            <div>
+            <div className="grid-cliente"> 
                 {
                     clientes.map((cliente) => (
                         <Card className="card-cliente" key={cliente.id}>
-                            <span>{cliente.nome}</span>
-                            <span>{cliente.nascimento}</span>
-                            <span>{cliente.descricao}</span>
-                            <Link to={`/${cliente.id}`}>
-                                <Button className='Button' variant='outline'>
-                                    Editar
+                            <span> <img src={User} alt="imagem"/> {cliente.nome}</span>
+                            <span> <img src={Date} alt="imagem"/> {cliente.nascimento}</span>
+                            <span> <img src={List} alt="imagem"/> {cliente.descricao}</span>
+                            <div className="div-button"> 
+                                <Link to={`/${cliente.id}`}>
+                                    <Button className='Button' variant='outline'>
+                                        Editar
+                                    </Button>
+                                </Link>
+                                <Button className='Button' variant='outline' onClick={() => deleteCliente(cliente.id)}>
+                                    Deletar
                                 </Button>
-                            </Link>
-                            <Button className='Button' variant='outline' onClick={() => deleteCliente(cliente.id)}>
-                                Deletar
-                            </Button>
+                            </div>
                         </Card>
                     ))
                 }
