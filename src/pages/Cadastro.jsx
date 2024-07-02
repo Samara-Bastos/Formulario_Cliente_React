@@ -6,9 +6,8 @@ import setupAxios from "../axios/config";
 function Cadastro() {
 
     const onSubmit = (e, FormData) => {
-
         e.preventDefault();
-
+        
         setupAxios.post("/cliente/create", FormData)
             .then((response) => {
                 console.log(response);
