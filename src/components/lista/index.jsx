@@ -21,7 +21,7 @@ function Lista(){
             setClientes(data);
         })
         .catch((error) => {
-            console.log(error);
+            toast.error('Ocorreu algum problema, tente novamente por favor!');
         });
 
     };
@@ -33,7 +33,7 @@ function Lista(){
                 setClientes(clientes.filter(cliente => cliente.id !== id));
             })
             .catch((error) => {
-                console.log(error);
+                toast.error('Ocorreu algum problema, tente novamente por favor!');
             });
     };
 

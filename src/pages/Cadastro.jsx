@@ -17,7 +17,7 @@ function Cadastro() {
                 navigate('/view');
             })
             .catch((error) => {
-                console.log(error);
+                toast.error('Ocorreu algum problema, tente novamente por favor!');
             });
     }
 

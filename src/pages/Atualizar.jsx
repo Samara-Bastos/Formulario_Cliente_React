@@ -16,7 +16,7 @@ function Atualizar() {
                 setClienteData(response.data);
             })
             .catch(error => {
-                console.error(error);
+                toast.error('Ocorreu algum problema, tente novamente por favor!');
             });
     }, [id]);
 
@@ -30,7 +30,7 @@ function Atualizar() {
                 navigate('/view');
             })
             .catch((error) => {
-                console.log(error);
+                toast.error('Ocorreu algum problema, tente novamente por favor!');
             });
     }
 
