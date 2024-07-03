@@ -24,14 +24,14 @@ Inicialização do projeto:
 - React Router DOM
 - Chakra UI
 - Axios
-- React-toastify
+- React Toastify
 
 ## Rotas:
 O projeto utiliza React Router para navegação entre diferentes páginas:
 
-/ (Raiz): Exibe o formulário de cadastro de um novo cliente.
-/view: Exibe a lista de clientes registrados com opções para editar e deletar.
-/id: Exibe o formulário de atualização para o cliente especificado pelo ID.
+- / (Raiz): Exibe o formulário de cadastro de um novo cliente.
+- /view: Exibe a lista de clientes registrados com opções para editar e deletar.
+- /id: Exibe o formulário de atualização para o cliente especificado pelo ID.
 
 ## Integração com a API
 Este frontend interage com a API Cliente através dos seguintes endpoints:
