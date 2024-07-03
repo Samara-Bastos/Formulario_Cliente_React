@@ -1,12 +1,14 @@
 import { CardBody } from '@chakra-ui/react'
 import Formulario from '../components/form';
 import setupAxios from "../axios/config";
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate  } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import { toast } from 'react-toastify';
 
 function Atualizar() {
     const { id } = useParams();
     const [clienteData, setClienteData] = useState(null);
+    const navigate = useNavigate();
 
     useEffect(() => {
         setupAxios.get(`/cliente/${id}`)
@@ -24,7 +26,8 @@ function Atualizar() {
 
         setupAxios.put(`/cliente/update/${id}`, FormData)
             .then((response) => {
-                console.log(response);
+                toast.success('Cliente atualizado com sucesso!');
+                navigate('/view');
             })
             .catch((error) => {
                 console.log(error);

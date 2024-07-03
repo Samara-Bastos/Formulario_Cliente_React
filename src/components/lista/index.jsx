@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import setupAxios from "../../axios/config";
 import { Card} from '@chakra-ui/react';
 import './style.css';
+import { toast } from 'react-toastify';
 
 import User from '../../icons/user.svg';
 import List  from '../../icons/list.svg';
@@ -28,6 +29,7 @@ function Lista(){
     const deleteCliente = async (id) => {
         await setupAxios.delete(`/cliente/delete/${id}`)
             .then((response) => {
+                toast.success('Cliente excluido com sucesso!');
                 setClientes(clientes.filter(cliente => cliente.id !== id));
             })
             .catch((error) => {
