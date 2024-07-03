@@ -45,7 +45,7 @@ function Formulario({onSubmit, textButton, formDataId}){
 
             <FormControl className='FormControl'>
                 <FormLabel className='Label' htmlFor='nascimento'>Data de nascimento</FormLabel>
-                <Input variant='flushed' type='datetime-local' name='nascimento' value={FormData.nascimento} id='nascimento' onChange={onChange} required />
+                <Input variant='flushed' type='date' name='nascimento' value={FormData.nascimento} id='nascimento' onChange={onChange} required />
             </FormControl>
             
             <FormControl className='FormControl'>
