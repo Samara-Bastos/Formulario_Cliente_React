@@ -42,7 +42,7 @@ Endpoint POST: /cliente/create
 Endpoint GET: /cliente
 - Descrição: Permite a visualização de todos os clientes registrados.
 
-Endpoint GET: /cliente/
+Endpoint GET: /cliente/id
 - Descrição: Permite a visualização do cliente responsável pelo identificador mencionado.
 
 Endpoint PUT: /cliente/update/
