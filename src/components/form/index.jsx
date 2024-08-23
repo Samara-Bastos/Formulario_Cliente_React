@@ -92,7 +92,7 @@ function Formulario({onSubmit, textButton, formDataId}){
             </FormControl>
 
             <FormControl className='FormControl Div-Button'>
-                <Link to={`/view`}>
+                <Link to={`/`}>
                     <Button className='Button' variant='outline'>
                         Ver clientes
                     </Button>

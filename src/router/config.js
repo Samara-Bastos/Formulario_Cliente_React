@@ -10,15 +10,15 @@ export const router = createBrowserRouter([
       children: [
         {
           path: "/",
-          element: <Cadastro />
+          element: <View />
         },
         {
           path: "/:id",
           element: <Atualizar />
         },
         {
-          path: "/view",
-          element: <View />
+          path: "/cadastrar",
+          element: <Cadastro />
         }
       ]
     }

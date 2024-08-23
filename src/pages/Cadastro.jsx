@@ -14,7 +14,7 @@ function Cadastro() {
         setupAxios.post("/cliente/create", FormData)
             .then((response) => {
                 toast.success('Cliente inserido com sucesso!');
-                navigate('/view');
+                navigate('/');
             })
             .catch((error) => {
                 toast.error('Ocorreu algum problema, tente novamente por favor!');

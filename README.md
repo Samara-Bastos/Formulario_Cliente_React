@@ -29,8 +29,8 @@ Inicialização do projeto:
 ## Rotas:
 O projeto utiliza React Router para navegação entre diferentes páginas:
 
-- / (Raiz): Exibe o formulário de cadastro de um novo cliente.
-- /view: Exibe a lista de clientes registrados com opções para editar e deletar.
+- / (Raiz): Exibe a lista de clientes registrados com opções para editar e deletar.
+- /cadastrar: Exibe o formulário de cadastro de um novo cliente.
 - /id: Exibe o formulário de atualização para o cliente especificado pelo ID.
 
 ## Integração com a API

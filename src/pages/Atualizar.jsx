@@ -27,7 +27,7 @@ function Atualizar() {
         setupAxios.put(`/cliente/update/${id}`, FormData)
             .then((response) => {
                 toast.success('Cliente atualizado com sucesso!');
-                navigate('/view');
+                navigate('/');
             })
             .catch((error) => {
                 toast.error('Ocorreu algum problema, tente novamente por favor!');
