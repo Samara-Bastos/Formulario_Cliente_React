@@ -43,7 +43,7 @@ function Lista(){
 
     return(
         <div>
-            <Link to={`/`}>
+            <Link to={`/cadastrar`}>
                 <Button className='Button' variant='outline'>
                     Novo cliente
                 </Button>
